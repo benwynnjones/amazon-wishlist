@@ -12,7 +12,7 @@ class Select {
     function __construct() {
         $this->wishlistId = getenv("WISHLIST_ID");
         $this->budget = getenv("WISHLIST_BUDGET");
-        $this->amazonTold = getenv("AMAZON_TLD");
+        $this->amazonTld = getenv("AMAZON_TLD");
         
         $scraper = new \AppZap\AmazonWishLister\Scraper();
         $this->wishlist = $scraper->scrape('http://www.amazon.' .$this->amazonTld . '/registry/wishlist/' . $this->wishlistId);

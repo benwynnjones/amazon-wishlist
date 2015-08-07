@@ -15,7 +15,7 @@ class Select {
         $this->amazonTold = getenv("AMAZON_TLD");
         
         $scraper = new \AppZap\AmazonWishLister\Scraper();
-        $this->wishlist = $scraper->scrape('http://www.amazon.' .$this->amazonTld '/registry/wishlist/' . $this->wishlistId);
+        $this->wishlist = $scraper->scrape('http://www.amazon.' .$this->amazonTld . '/registry/wishlist/' . $this->wishlistId);
     }
 
     public function pick() {

@@ -1,0 +1,15 @@
+<!DOCTYPE html><html>
+	<head></head>
+	<body>
+		<center>
+            {% for item in selection %}
+                <div><a style="font-size: 20px; font-family: helvetica" href="{{ item.link }}">{{ item.name }}</a>
+                <p style="font-size: 20px; font-family: helvetica">&pound;{{ item.price }}</p>
+                </p><a href="{{ item.link }}"><img src="{{ item.picture }}"></a></div>
+                <br/><br/>
+            {% endfor %}
+            
+            <p style="font-size: 24px; font-family: helvetica">Total: &pound;{{ spent }}</p>
+		</center>
+	</body>
+</html>
